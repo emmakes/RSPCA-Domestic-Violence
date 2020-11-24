@@ -1,0 +1,539 @@
+html, body, .grid-container { height: 100%; margin: 0px; padding: 0px; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr;
+  grid-template-rows: 150px 100px 150px 500px 150px;
+  gap: 0px;
+  grid-template-areas:
+    "Header Header Header"
+    "Nav Nav Nav"
+    "Main Main Main"
+    "Footer Footer Footer";
+}
+
+Header { 
+  grid-area: Header;
+  padding: 15px; 
+  background-color: #189CA1;
+}
+
+.DV_Community_Program_Title {
+  width: 880px;
+  height: 200px;
+  float: right;
+  display: flex;
+  padding: -10px 90px;
+}
+
+#logo {
+  display: inline-block;
+  margin: 30px 80px;
+  width: 310px;
+  height: 93px;
+}
+
+Nav { grid-area: Nav; 
+  background-color: #189CA1; 
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 20px 90px;
+  font-family: 'Lora', serif;
+  font-size: 30px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 700; 
+  line-height: 26.4px;
+  cursor: pointer;
+  transition: 0.1s ease-in;
+}
+
+nav a:link {
+  color: black;
+  
+}
+
+nav a:visited {
+  color: black;
+}
+
+nav a:active {
+  color: white;
+}
+
+nav a:hover {
+  color: white;
+}
+
+ul li:hover {
+  background-color: #003473;
+}
+
+Main { grid-area: Main; }
+
+.CTA h1{
+  font-family: 'Lora', serif;
+  font-size: 35px;
+  text-align: center;
+  padding: 20px;
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 700; 
+  line-height: 26.4px;
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: white;
+  top: 0;
+  color: #189CA1;
+}
+
+.Story_Section {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.Story_1 {
+  position: relative;
+  width: 570px;
+  height: 450px;
+  margin: 70px;
+  float: left;
+}
+
+.Story_2 {
+  position: relative;
+  width: 570px;
+  height: 450px;
+  margin: 70px;
+  float: right;
+}
+
+.Three_options_to_help {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.Three_options_to_help h1 {
+  font-family: 'Lora', serif;
+  font-size: 35px;
+  text-align: center;
+  padding: 20px;
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 700; 
+  line-height: 26.4px;
+  background-color: white;
+  top: 0;
+  color: #189CA1;
+}
+
+
+.Donate_Money {
+  position: relative;
+  width: 470px;
+  height: 350px;
+  margin: 70px;
+  float: left;
+}
+
+.dmoney_button {
+  border: none;
+  margin: 70px auto 20px;
+  display: flex;
+  color: white;
+  background-color: #189CA1;
+  padding: 15px 70px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  font-family:'Lora', serif;
+  cursor: pointer;
+}
+
+.Donate_Time {
+  position: relative;
+  width: 470px;
+  height: 350px;
+  margin: 70px;
+  float: right;
+}
+
+.Volunteer_Image {
+  text-align: center;
+  display: block;
+  float: right;
+  width: 500px;
+  height: 500px;
+}
+
+.dtime_button{
+  border: none;
+  margin: 70px auto 20px;
+  display: flex;
+  color: white;
+  background-color: #189CA1;
+  padding: 15px 70px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  font-family:'Lora', serif;
+  cursor: pointer;
+}
+
+.dtime_button a:link {
+  color: white;
+  text-decoration: none;
+}
+
+.dtime_button a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.dtime_button a:hover {
+  color: white;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.Fundraise {
+  position: relative;
+  width: 470px;
+  height: 350px;
+  margin: 70px auto 20px;
+  display: flex;
+  float: none;
+}
+
+.fundraise_button {
+  border: none;
+  margin: 70px auto 20px;
+  display: flex;
+  color: white;
+  background-color: #189CA1;
+  padding: 15px 70px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  font-family:'Lora', serif;
+  cursor: pointer;
+}
+
+.Donate_Time_Title {
+  font-family: 'Lora', serif;
+  font-size: 45px;
+  text-align: center;
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 700; 
+  line-height: 26.4px;
+  position: relative;
+  color: #189CA1;
+}
+
+.important_description {
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  padding: 10px 220px;
+  text-align: left;
+  font-style: normal; 
+  font-weight: 200; 
+  line-height: 40px;
+  position: relative;
+  color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  margin: 0px 40px;
+  background-color: white;
+  float: left;
+  width: 800px;
+  height: 500px;
+  font-family: 'Lora', serif;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+textarea[type=text-area] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #189CA1;
+  color: white;
+  padding: 16px 0px;
+  margin: 3px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-size: 20px;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+.image_img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.image_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.35s;
+}
+
+.image_overlay--blur {
+  backdrop-filter: blur(5px);
+}
+
+.image_overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.35s;
+}
+
+.image_overlay:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.image_overlay:hover > * {
+  transform: translateY(0);
+  cursor: pointer;
+}
+
+.image_title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.image_description {
+  font-size: 1.25em;
+  margin-top: 0.25em;
+}
+
+.image_reasonsforhelping_description {
+  font-size: 1.25em;
+  margin-top: 0.25em;
+}
+
+.Your_Impact_Video {
+  text-align: center;
+  margin: 70px;
+}
+
+.If_you_donate {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 70px;
+  float: left;
+}
+
+.If_you_volunteer {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 70px;
+  float: left;
+}
+
+.your_impact_images {
+  display: block;
+  width: 100%;
+  height: 100%;
+  float: left;
+  margin: 50px 120px;
+}
+
+.text-box {
+  width: 400px;
+  margin: 100px 180px;
+  display: block;
+  float: right;
+  padding: 20px;
+  background-color: #189CA1;
+  color: white;
+  font-size: 20px;
+  font-weight: regular;
+  font-family:'Lora', serif;
+}
+
+.text-box .link_to_volunteer a:link {
+  color: #003473;
+}
+
+.text-box .link_to_volunteer a:visited {
+  color: #003473;
+}
+
+.text-box .link_to_volunteer a:active {
+  color: black;
+}
+
+.text-box .link_to_volunteer a:hover {
+  color: black;
+}
+
+.intro_text {
+  text-align: center;
+  color: #189CA1;
+  font-size: 40px;
+  font-weight: regular;
+  font-family:'Lora', serif;
+  margin: 50px 100px;
+}
+
+Footer { 
+  grid-area: Footer; 
+  clear: both;
+  position: relative;
+  height: 200px;
+  margin-top: 1680px;
+  padding: 0px 70px;
+  background-color: rgba(24, 156, 161, 0.8);
+}
+
+footer h1 {
+  font-family: 'Lora', serif;
+  font-size: 25px;
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 700; 
+  line-height: 26.4px;
+  position: relative;
+  color: black;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background-color: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background-color: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background-color: #125688;
+  color: white;
+}
+
+.Contact_Numbers {
+  display: inline-block;
+  padding: 0px 20px;
+  font-family: 'Lora', serif;
+  font-size: 15px;
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 700; 
+  line-height: 26.4px;
+  position: relative;
+  color: black;
+}
+
+.Contact_Numbers a:link {
+  color: white;
+  
+}
+
+.Contact_Numbers a:visited {
+  color: white;
+}
+
+.Contact_Numbers a:active {
+  color: black;
+}
+
+.Contact_Numbers a:hover {
+  color: black;
+}
+
+@media screen and (max-width: 460px) {
+  .grid-container{
+    display: block;
+  }
+  
+  header,
+  nav,
+  main,
+  footer {
+    width: 100%;
+    min-height: 200px;
+  }
+}
